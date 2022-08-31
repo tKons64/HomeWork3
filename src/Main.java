@@ -83,5 +83,24 @@ public class Main {
         System.out.println("За " + Period3_Days + " дня, машина произвела бутылок - " + performanceMachineInPeriod3 + " штук.");
         System.out.println("За " + Period4_Month + " месяц, машина произвела бутылок - " + performanceMachineInPeriod4 + " штук.");
 
+    //Задание №5
+        System.out.println(" ");
+        System.out.println("Задание №5:");
+
+        byte totalJars = 120;
+        byte oneClassJarsWhiteColor = 2;
+        byte oneClassJarsBrownColor = 4;
+        int totalClassesInSchool = totalJars / (oneClassJarsWhiteColor + oneClassJarsBrownColor);
+
+        float proportionOfWhiteColor = (float)oneClassJarsWhiteColor / (oneClassJarsWhiteColor + oneClassJarsBrownColor);
+
+        int totalJarsWhiteColor = (int) (totalJars * proportionOfWhiteColor);
+        int totalJarsBrownColor = totalJars - totalJarsWhiteColor;
+
+        System.out.println("В школе, где " + totalClassesInSchool + " классов, нужно "
+                + totalJarsWhiteColor + " банок белой краски и "
+                + totalJarsBrownColor + " банок коричневой краски");
+
+
     }
 }
