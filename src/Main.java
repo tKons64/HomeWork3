@@ -101,6 +101,25 @@ public class Main {
                 + totalJarsWhiteColor + " банок белой краски и "
                 + totalJarsBrownColor + " банок коричневой краски");
 
+    //Задание №6
+        System.out.println(" ");
+        System.out.println("Задание №6:");
 
+        short weghtBanana = 80;
+        short volumeMilk = 200;
+        short weghtIcecream = 100;
+        short egg = 70;
+
+        // переведем молоко в вес
+        double weghtMilk = volumeMilk * 1.05;
+
+        //считаем общий вес завтрака
+        int weightBreakfastGrams =  (int) (weghtBanana * 5 + weghtMilk + weghtIcecream * 2 + egg * 4);
+
+        //переводим вес завтрака в килограммы
+        float weightBreakfastKilograms = (float)weightBreakfastGrams / 1000;
+
+        System.out.println("Общий вес завтрака в граммах - " + weightBreakfastGrams);
+        System.out.println("Общий вес завтрака в килограммах - " + weightBreakfastKilograms);
     }
 }
