@@ -40,6 +40,18 @@ public class Main {
         System.out.println(var7);
         System.out.println(var8);
 
+    //Задание №3
+        System.out.println(" ");
+        System.out.println("Задание №3:");
 
+        byte studentsTeacher1 = 23;
+        byte studentsTeacher2 = 27;
+        byte studentsTeacher3 = 30;
+        short sheetsPaper = 480;
+
+        short studentsTotal = (short)(studentsTeacher1 + studentsTeacher2 + studentsTeacher3);
+        int sheetsPaperForStudent = sheetsPaper / studentsTotal;
+
+        System.out.println("На каждого ученика рассчитано - " + sheetsPaperForStudent + " листов бумаги");
     }
 }
