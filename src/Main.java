@@ -53,5 +53,35 @@ public class Main {
         int sheetsPaperForStudent = sheetsPaper / studentsTotal;
 
         System.out.println("На каждого ученика рассчитано - " + sheetsPaperForStudent + " листов бумаги");
+
+    //Задание №4
+        System.out.println(" ");
+        System.out.println("Задание №4:");
+
+        byte exampleBottles = 16;
+        byte exampleTime = 2;
+
+        int performanceMachineInMinute = exampleBottles / exampleTime;
+
+        byte Period1_Minutes = 20;
+        byte Period2_Days = 1;
+        byte Period3_Days = 3;
+        byte Period4_Month = 1;
+
+        // Приведем все периоды к минутам
+        int Period2_Minutes = Period2_Days * 24 * 60;
+        int Period3_Minutes = Period3_Days * 24 * 60;
+        int Period4_Minutes = Period4_Month * 30 * 24 * 60;
+
+        int performanceMachineInPeriod1 = performanceMachineInMinute * Period1_Minutes;
+        int performanceMachineInPeriod2 = performanceMachineInMinute * Period2_Minutes;
+        int performanceMachineInPeriod3 = performanceMachineInMinute * Period3_Minutes;
+        int performanceMachineInPeriod4 = performanceMachineInMinute * Period4_Minutes;
+
+        System.out.println("За " + Period1_Minutes + " минут, машина произвела бутылок - " + performanceMachineInPeriod1 + " штук.");
+        System.out.println("За " + Period2_Days + " день, машина произвела бутылок - " + performanceMachineInPeriod2 + " штук.");
+        System.out.println("За " + Period3_Days + " дня, машина произвела бутылок - " + performanceMachineInPeriod3 + " штук.");
+        System.out.println("За " + Period4_Month + " месяц, машина произвела бутылок - " + performanceMachineInPeriod4 + " штук.");
+
     }
 }
