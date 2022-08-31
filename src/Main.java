@@ -24,11 +24,11 @@ public class Main {
         System.out.println("Задание №2:");
         float var1 = 27.12f;
         long var2 = 987_678_965_549L;
-        float var3 = 2.786f;
+        double var3 = 2.786;
         boolean var4 = false;
-        short var5 = 569;
+        char var5 = 569;
         short var6 = -159;
-        short var7 = 27897;
+        int var7 = 27897;
         byte var8 = 67;
 
         System.out.println(var1);
