@@ -121,5 +121,29 @@ public class Main {
 
         System.out.println("Общий вес завтрака в граммах - " + weightBreakfastGrams);
         System.out.println("Общий вес завтрака в килограммах - " + weightBreakfastKilograms);
+
+    //Задание №7
+        System.out.println(" ");
+        System.out.println("Задание №7:");
+
+        byte weightLostKg = 7; // вес в килограммах
+        int weightLostGr = weightLostKg * 1000; // вес в граммах
+        short gramsMin = 250;
+        short gramsMax = 500;
+        int gramsAverage = (gramsMax + gramsMin) / 2;
+
+        int daysMax = weightLostGr / gramsMin;
+        int daysMin = weightLostGr / gramsMax;
+        int daysAverageFull = weightLostGr / gramsAverage;
+        float hoursRemainder = ((weightLostGr / (float)gramsAverage) % daysAverageFull) * 24;
+
+        System.out.println("Максимальное время похудения Боксера №1 (по 250 гр. в день) - " + daysMax + " дней");
+        System.out.println("Минимальное время похудения Боксера №1 (по 500 гр. в день) - " + daysMin + " дней");
+        System.out.println("Среднее время похудения Боксера №1 (по " + gramsAverage + " гр. в день) - " +
+                (byte)daysAverageFull + " дней, " +
+                (byte)(hoursRemainder + 0.5) + " часов");
+
+
+
     }
 }
